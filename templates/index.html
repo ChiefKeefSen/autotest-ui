@@ -1,0 +1,50 @@
+<!DOCTYPE html>  <!-- тип документа -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--head содержит метаинформацию-->
+    <title>Title</title> <!--Название вкладки-->
+    <style>
+        .h2-text {
+            color: darkred
+        }
+    </style> <!--часть класса, он нужен чтобы стилизовывать группы элементов-->
+</head>
+<body>
+<div> <!--блочный контейнер для группировки элементов--> <!--division-->
+    <h1 id="h1-text">H1 text</h1> <!--самый большой заголовок header и дальше на уменьшение-->
+    <h2 class="h2-text">H2 text</h2>
+    <h6 class="h2-text">H6 text</h6>
+    <p>Это просто текст, может есть <span style="color: darkcyan">какие-то ограничения</span>, я не знаю</p>
+    <a href="https://playwright.dev/python/docs/library" target="_blank">Python</a> <!--anchor-->
+    <!--это тег ссылки, target открывает ссылку в новом окне-->
+    <img alt="browser.png" src="https://playwright.dev/python/img/playwright-logo.svg" style="width: 250px">
+    <!--style это стиль элемента, а alt нужен для запасного варианта отображения, если с 1 картинкой что-то случится-->
+    <ul> <!--это список-->
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <ol><!--это уже нумерованный список-->
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <!--
+    <ul> — unordered list
+    <ol> — ordered list
+    <li> — list item
+    -->
+    <form action="./action" method="POST">
+        <input type="text" value="12345" placeholder="Placeholder">
+        <input required type="email" placeholder="Placeholder">
+        <input type="password" placeholder="Placeholder">
+        <!--placeholder это фоновый текст поля ввода, а value это заранее введенное значение-->
+        <textarea required placeholder="placeholder">12345</textarea>
+        <button type="submit">Text</button>
+    </form>
+
+</div>
+</body>
+</html>
+
+<!--<a href="https://playwright.dev/python/docs/library">Python</a>  прям внутрь тега можно указывать атрибуты-->
