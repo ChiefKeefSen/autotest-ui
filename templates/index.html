@@ -4,20 +4,43 @@
     <meta charset="UTF-8"> <!--head содержит метаинформацию-->
     <title>Title</title> <!--Название вкладки-->
     <style>
+        ul > li:nth-child(2) {
+            color: crimson
+        }
+        li::marker {
+            color: #9a2a2a;
+        }
+        a:hover {
+            color: darkorange
+        }
+        input[type="text"]:hover {
+            color: blueviolet
+        }
+        ul > li{
+            color: aquamarine
+        }
+
+        div.Python > a{
+            color: red
+        }
+        h6 {
+            font-size: 15px
+        }
         .h2-text {
-            color: darkred
+            color: #9a2a2a
         }
     </style> <!--часть класса, он нужен чтобы стилизовывать группы элементов-->
 </head>
 <body>
-<div> <!--блочный контейнер для группировки элементов--> <!--division-->
+<div class="Python"> <!--блочный контейнер для группировки элементов--> <!--division-->
     <h1 id="h1-text">H1 text</h1> <!--самый большой заголовок header и дальше на уменьшение-->
+    <h1>H1 text 2</h1>
     <h2 class="h2-text">H2 text</h2>
     <h6 class="h2-text">H6 text</h6>
     <p>Это просто текст, может есть <span style="color: darkcyan">какие-то ограничения</span>, я не знаю</p>
     <a href="https://playwright.dev/python/docs/library" target="_blank">Python</a> <!--anchor-->
     <!--это тег ссылки, target открывает ссылку в новом окне-->
-    <img alt="browser.png" src="https://playwright.dev/python/img/playwright-logo.svg" style="width: 250px">
+    <img alt="browser.png" src="https://browser-radar.ru/wp-content/uploads/2025/08/mozilla-logo-350x350.png" style="width: 250px">
     <!--style это стиль элемента, а alt нужен для запасного варианта отображения, если с 1 картинкой что-то случится-->
     <ul> <!--это список-->
         <li>item 1</li>
@@ -43,6 +66,16 @@
         <button type="submit">Text</button>
     </form>
 
+</div>
+<div class="JavaScript">
+    <a href="https://playwright.dev/python/docs/library" target="_blank">JS</a>
+</div>
+<div class="nth">
+    <p>125</p>
+    <p>25</p>
+    <h5>36</h5>
+    <h6>433</h6>
+    <p>511</p>
 </div>
 </body>
 </html>
