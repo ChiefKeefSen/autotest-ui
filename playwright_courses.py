@@ -37,7 +37,7 @@ with sync_playwright() as playwright:
     expect(courses_list_empty_view_title_text).to_have_text('There is no results')
 
     courses_list_empty_view_description_text = page.get_by_test_id('courses-list-empty-view-description-text')
-    expect(courses_list_empty_view_description_text).to_have_text('Results from the load tests pipeline will be displayed here')
+    expect(courses_list_empty_view_description_text).to_have_text('Results from the load test pipeline will be displayed here')
 
     
 
